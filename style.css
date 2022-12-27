@@ -1,0 +1,116 @@
+body {
+  background-image: url(./Images/bg-cover.png);
+  max-width: 1100px;
+  height: 600px;
+  margin: auto;
+}
+
+.wheel {
+  font-family: 'Varta', sans-serif;
+  margin: 20px 10px 100px 20px;
+}
+
+.img-container {
+  display: flex;
+  padding: 30px 0;
+}
+
+img {
+  max-width: 175px;
+  height: 175px;
+  margin: 20px 10px 10px 20px;
+}
+
+.text-container {
+  display: flex;
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 10px;
+  align-items: center;
+  justify-content: space-around;
+  width: 1350px;
+  
+}
+
+.text p:first-child,
+.text-two p:first-child,
+.text-three p:first-child,
+.text-four p:first-child {
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.text p:last-child,
+.text-two p:last-child,
+.text-three p:last-child,
+.text-four p:last-child {
+  margin: -15px;
+  line-height: 25px;
+}
+
+.text p:last-child span,
+.text-two p:last-child span:last-child,
+.text-three p:last-child span:last-child,
+.text-four p:last-child span:last-child {
+  font-weight: bold;
+}
+
+span {
+  display: block;
+}
+
+.cover {
+  padding: 0px 10px;
+  position: relative;
+  
+}
+
+.left {
+  position: absolute;
+  left: 0;
+  top: 33%;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  top: 33%;
+}
+
+.carousel-slide {
+  height: 340px;
+  width: 220px;
+  
+}
+.carousel-slide:hover, .carousel-slide.active {
+  transform: scale(1.15);
+  background-image: url(./Images/wheel-bg.jpg);
+  border: 1px solid #000000;
+  
+}
+
+.scroll-images {
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.scroll-images::-webkit-scrollbar {
+  width: 5px;
+  height: 0px;
+  background-color: #aaa;
+  -webkit-appearance: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+
